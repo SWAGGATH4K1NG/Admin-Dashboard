@@ -1,8 +1,7 @@
 # admin_dashboard
 
 <div align="center" style="margin: 30px;">
-    <a href="https://refine.dev">
-    <img alt="refine logo" src="https://refine.ams3.cdn.digitaloceanspaces.com/readme/refine-readme-banner.png">
+<img alt="refine logo" src="./public/frontphoto.png">
     </a>
 </div>
 <br/>
