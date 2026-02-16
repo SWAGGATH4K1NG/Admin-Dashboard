@@ -221,33 +221,4 @@
   @apply w-full bg-transparent border-0 outline-none text-sm text-foreground placeholder:text-muted-foreground/60;
 }
 
-/* 📊 Data Table Styles */
-table {
-  @apply w-full border-collapse;
-}
-
-table thead {
-  @apply bg-muted/50;
-}
-
-table thead tr {
-  @apply border-b border-border;
-}
-
-table thead th {
-  @apply px-4 py-3 text-left font-semibold text-foreground text-sm;
-}
-
-table tbody tr {
-  @apply border-b border-border/50 hover:bg-muted/30 transition-colors;
-}
-
-table tbody tr:last-child {
-  @apply border-b-0;
-}
-
-table tbody td {
-  @apply px-4 py-3 text-sm text-foreground;
-}
-
 }
