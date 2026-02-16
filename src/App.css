@@ -182,3 +182,72 @@
   --shadow-xl: var(--shadow-xl);
   --shadow-2xl: var(--shadow-2xl);
 }
+
+@layer components {
+.page-title {
+  @apply text-3xl font-bold text-foreground tracking-tight;
+}
+
+.column-title {
+  @apply text-lg font-semibold text-foreground tracking-tight;
+}
+
+/* 📝 Intro Section */
+
+
+.intro-text {
+  @apply text-muted-foreground text-sm md:text-base mb-6 leading-relaxed;
+}
+
+/* 🔍 Actions Section */
+.actions-row {
+  @apply flex flex-col sm:flex-row gap-4 items-stretch sm:items-center;
+}
+
+/* 🔎 Search Field */
+.search-field {
+  @apply relative flex items-center flex-1 min-w-0 px-3 py-2.5 rounded-md border border-border bg-card transition-all;
+}
+
+.search-field:focus-within {
+  @apply border-primary ring-2 ring-primary/10;
+}
+
+.search-icon {
+  @apply mr-2 h-4 w-4 text-muted-foreground flex-shrink-0;
+}
+
+.search-field input {
+  @apply w-full bg-transparent border-0 outline-none text-sm text-foreground placeholder:text-muted-foreground/60;
+}
+
+/* 📊 Data Table Styles */
+table {
+  @apply w-full border-collapse;
+}
+
+table thead {
+  @apply bg-muted/50;
+}
+
+table thead tr {
+  @apply border-b border-border;
+}
+
+table thead th {
+  @apply px-4 py-3 text-left font-semibold text-foreground text-sm;
+}
+
+table tbody tr {
+  @apply border-b border-border/50 hover:bg-muted/30 transition-colors;
+}
+
+table tbody tr:last-child {
+  @apply border-b-0;
+}
+
+table tbody td {
+  @apply px-4 py-3 text-sm text-foreground;
+}
+
+}

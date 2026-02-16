@@ -1,47 +1,163 @@
-# admin_dashboard
+# Admin Dashboard - PERN Stack
 
 <div align="center" style="margin: 30px;">
-<img alt="refine logo" src="./public/frontphoto.png">
-    </a>
+    <img alt="Admin Dashboard" src="./public/frontphoto.png" width="600">
 </div>
-<br/>
 
-This [Refine](https://github.com/refinedev/refine) project was generated with [create refine-app](https://github.com/refinedev/refine/tree/master/packages/create-refine-app).
+## 📋 Sobre o Projeto
 
-## Getting Started
+Um painel administrativo completo e moderno desenvolvido com a stack **PERN** (PostgreSQL, Express.js, React, Node.js). Fornece uma interface intuitiva para gerenciar dados, usuários e recursos da aplicação com funcionalidades avançadas de autenticação, autorização e visualização de dados.
 
-A React Framework for building internal tools, admin panels, dashboards & B2B apps with unmatched flexibility ✨
+## 🚀 Stack de Tecnologia
 
-Refine's hooks and components simplifies the development process and eliminates the repetitive tasks by providing industry-standard solutions for crucial aspects of a project, including authentication, access control, routing, networking, state management, and i18n.
+### Frontend
+- **React** - UI library
+- **TypeScript** - Type safety
+- **Vite** - Build tool & dev server
+- **React Router** - Routing
+- **Tailwind CSS** - Styling
+- **shadcn/ui** - Component library
+- **Refine** - Admin framework
+- **Lucide React** - Icons
 
-## Available Scripts
+### Backend
+- **Node.js** - Runtime
+- **Express.js** - Backend framework
+- **PostgreSQL** - Database
+- **JWT** - Authentication
 
-### Running the development server.
+## ✨ Funcionalidades
+
+- 🔐 Autenticação e autorização com JWT
+- 📊 Dashboard com gráficos e estatísticas
+- 👥 Gerenciamento de usuários
+- 📚 Gerenciamento de disciplinas/subjects
+- 🎨 Tema escuro/claro
+- 📱 Interface responsiva
+- 🔔 Sistema de notificações
+- 📋 Tabelas avançadas com filtros e paginação
+- ⌨️ Atalhos de teclado com Kbar
+- 📱 Design mobile-first
+
+## 📦 Instalação
+
+### Pré-requisitos
+- Node.js 18+
+- npm ou yarn
+- PostgreSQL
+
+### Clone e Instalação
 
 ```bash
-    npm run dev
+# Clone o repositório
+git clone <seu-repositorio>
+cd admin_dashboard
+
+# Instale as dependências
+npm install
+
+# Configure as variáveis de ambiente
+cp .env.example .env.local
 ```
 
-### Building for production.
+## 🏃 Scripts Disponíveis
 
+### Executar servidor de desenvolvimento
 ```bash
-    npm run build
+npm run dev
 ```
+Abre [http://localhost:5173](http://localhost:5173) para visualizar no navegador.
 
-### Running the production server.
-
+### Build para produção
 ```bash
-    npm run start
+npm run build
 ```
 
-## Learn More
+### Executar servidor de produção
+```bash
+npm run start
+```
 
-To learn more about **Refine**, please check out the [Documentation](https://refine.dev/docs)
+### Lint
+```bash
+npm run lint
+```
 
-- **REST Data Provider** [Docs](https://refine.dev/docs/core/providers/data-provider/#overview)
-- **shadcn/ui** [Docs](https://refine.dev/docs/guides-concepts/general-concepts/#headless-concept)
-- **React Router** [Docs](https://refine.dev/docs/core/providers/router-provider/)
+## 📁 Estrutura do Projeto
 
-## License
+```
+admin_dashboard/
+├── src/
+│   ├── components/
+│   │   ├── refine-ui/          # Componentes Refine customizados
+│   │   │   ├── buttons/        # Botões (Create, Edit, Delete, etc)
+│   │   │   ├── data-table/     # Componentes de tabela
+│   │   │   ├── form/           # Formulários (Login, SignUp, etc)
+│   │   │   ├── layout/         # Layout, Header, Sidebar
+│   │   │   ├── notification/   # Toaster e notificações
+│   │   │   ├── theme/          # Tema e seletor de tema
+│   │   │   └── views/          # Views (Create, Edit, List, Show)
+│   │   └── ui/                 # Componentes shadcn/ui
+│   ├── pages/
+│   │   └── dashboard.tsx       # Página principal do dashboard
+│   ├── hooks/                  # Custom React hooks
+│   ├── lib/                    # Utilitários
+│   ├── providers/              # Data providers e constantes
+│   ├── App.tsx                 # Componente principal
+│   └── index.tsx               # Entry point
+├── public/                     # Arquivos estáticos
+├── package.json
+├── tsconfig.json
+├── vite.config.ts
+└── index.html
+```
+
+## 🔧 Configuração
+
+Crie um arquivo `.env.local` com as seguintes variáveis:
+
+```env
+VITE_API_URL=http://localhost:3000
+VITE_PROJECT_ID=Ght49F-3tRHMV-pH92MM
+```
+
+## 🎨 Temas
+
+O dashboard suporta temas claro e escuro. Use o seletor de tema no header para alternar entre eles.
+
+## 📚 Componentes Principais
+
+### Layout
+- **Header** - Barra superior com navegação
+- **Sidebar** - Menu lateral colapsável
+- **Breadcrumb** - Navegação em trilha
+
+### Tabelas
+- Filtros avançados
+- Paginação
+- Ordenação por colunas
+- Ações em lote
+
+### Formulários
+- Validação de dados
+- Feedback em tempo real
+- Integração com Refine
+
+## 🔐 Autenticação
+
+O projeto utiliza JWT para autenticação. O token é armazenado localmente e incluído em todas as requisições à API.
+
+## 📖 Documentação
+
+- [Refine Docs](https://refine.dev/docs)
+- [React Router Docs](https://reactrouter.com)
+- [shadcn/ui Docs](https://ui.shadcn.com)
+- [Tailwind CSS Docs](https://tailwindcss.com)
+
+## 🤝 Contribuindo
+
+Contribuições são bem-vindas! Sinta-se livre para abrir issues e pull requests.
+
+## 📄 Licença
 
 MIT
